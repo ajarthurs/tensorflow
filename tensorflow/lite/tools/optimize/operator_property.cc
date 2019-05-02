@@ -91,6 +91,11 @@ OperatorProperty GetOperatorProperty(const BuiltinOperator& op) {
       property.output_indexes = {0};
       property.version = 1;
       break;
+    case BuiltinOperator_RELU:
+      property.input_indexes = {0};
+      property.output_indexes = {0};
+      property.version = 1;
+      break;
     case BuiltinOperator_RESHAPE:
       property.input_indexes = {0};
       property.output_indexes = {0};
